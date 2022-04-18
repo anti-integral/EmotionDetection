@@ -12,4 +12,6 @@ If you want, access the fModel.h5 in the repository using the load model functio
 
 The you can upload the testing folder or images in your drive if you want to use the testing images I used. Otherwise, use the X_Test images.
 
-*Note* - If you want your model to train much faster, get colab pro or use a different software.
+***Note*** - If you want your model to train much faster, get colab pro or use a different software.
+
+*Also, this doesn't have much to do with the Jetson Nano since I was having some issues with it, so you can feel free to run it on your Mac/PC with just a working webcam.*
