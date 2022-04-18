@@ -1,5 +1,7 @@
 # EmotionDetectionOmSanan
 
+For a video demo, visit https://www.youtube.com/watch?v=-S2aZQ04EFk
+
 First, dowload the FER2013 dataset from kaggle.
 https://www.kaggle.com/datasets/deadskull7/fer2013
 
