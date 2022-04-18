@@ -297,12 +297,6 @@ plt.show()
 
 #There was good training along the way, but the model started overfitting at the end.
 
-cats = {
-    0: "happy",
-    1: "sad",
-    2: "neutral",
-}
-
 # import modules
 from IPython.display import display, Javascript, Image
 from google.colab.output import eval_js
@@ -310,6 +304,7 @@ from base64 import b64decode, b64encode
 import cv2
 import numpy as np
 import PIL
+from PIL import Image, ImageDraw
 import io
 import html
 import time
@@ -406,11 +401,13 @@ except Exception as err:
 
 #if this doesn't work, rerun the cell
 
-path = "/content/drive/MyDrive/Training/0/35010.png"
+path = "/content/drive/MyDrive/Testing/0/234.png"
 
-path = "/content/drive/MyDrive/Training/3/1006.png"
+path = "/content/drive/MyDrive/Testing/3/1006.png"
 
-path = "/content/drive/MyDrive/Training/5/4444.png"
+path = "/content/drive/MyDrive/Testing/5/4444.png"
+
+path = "/content/drive/MyDrive/Testing/6/1587.png"
 
 path = "/content/photo.jpg"
 
@@ -423,7 +420,7 @@ def prepare(path):
 
 predictions = model.predict(prepare(path))
 
-#predictions[0]
+predictions[0]
 
 tempPre = str(predictions[0])
 tempPre2 = tempPre.replace("[", "")
@@ -443,7 +440,7 @@ pred = tempPred2.replace("]", "")
 pred
 intPred = int(pred)
 
-if(fPree > fPree2):
+if(fPree < fPree2):
   print("The person is angry!")
   i = 1
 
@@ -466,7 +463,7 @@ img = cv2.imread(path)
 img = np.float32(img)
 
 if (i == 1):
-  if (fPree == fPree2):
+  if (fPree < fPree2):
       status = "Anger" 
       imgg = Image.open(path)
       I1 = ImageDraw.Draw(imgg)
@@ -524,4 +521,4 @@ else:
 
 final_image = cv2.imread(image)
 plt.imshow(cv2.cvtColor(final_image, cv2.COLOR_BGR2RGB))
-plt.grid(None)
+plt.grid(False)
