@@ -2,8 +2,10 @@
 
 For a video demo, visit https://www.youtube.com/watch?v=-S2aZQ04EFk
 
-First, dowload the FER2013 dataset from kaggle.
+First, download the FER2013 dataset from kaggle.
 https://www.kaggle.com/datasets/deadskull7/fer2013
+
+Then unzip the Training_Images.zip and upload the folder to drive (this will take time),
 
 They open emotion_detection.py for the code - the link for the Colab notebook is:
 https://colab.research.google.com/drive/1Dpfp4e1J4V4yZxHPTRvspYks3GS38fjg
