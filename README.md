@@ -45,7 +45,7 @@ pip install
 
 
 
-###Then unzip the Training_Images.zip and upload the folder to drive (this will take time),
+### Then unzip the Training_Images.zip and upload the folder to drive (this will take time),
 
 ****Note - Make sure to use the code and model from the updated code folder.****
 
@@ -70,7 +70,7 @@ Otherwise, use the `X_Test` images.
 
 *Also, this doesn't have much to do with the Jetson Nano since I was having some issues with it, so you can feel free to run it on your Mac/PC with just a working webcam.*
 
-##Contributing
+## Contributing
 
 We welcome contributions! Please read our Contributing Guidelines for details on how to get started.
 Fork the repository.
